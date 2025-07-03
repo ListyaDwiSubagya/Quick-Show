@@ -19,12 +19,12 @@ const App = () => {
     <Toaster/>
      {!isAdminRoute && <Navbar/>}
       <Routes>
-        <Route path='/' element={Home}/>
-        <Route path='/movies' element={Movies}/>
-        <Route path='/movies/:id' element={MovieDetails}/>
-        <Route path='/movies/:id/:date' element={SeatLayout}/>
-        <Route path='/my-bookins' element={MyBookings}/>
-        <Route path='/favorite' element={Favorite}/>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/movies' element={<Movies/>}/>
+        <Route path='/movies/:id' element={<MovieDetails/>}/>
+        <Route path='/movies/:id/:date' element={<SeatLayout/>}/>
+        <Route path='/my-bookins' element={<MyBookings/>}/>
+        <Route path='/favorite' element={<Favorite/>}/>
       </Routes>
       {!isAdminRoute && <Footer/>}
     </>
